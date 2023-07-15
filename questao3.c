@@ -21,33 +21,33 @@ void criarTabela(char operacao){
     		switch(operacao) {
         		case '^':
             		if(A == 1 && B == 1)
-                			printf("V\n");
+                		printf("V\n");
             		else
-                			printf("F\n");
+                		printf("F\n");
             		break;
         		case 'v':
             		if(A == 1 || B == 1)
-                			printf("V\n");
+                		printf("V\n");
             		else
-                			printf("F\n");
+                		printf("F\n");
             		break;
         		case '+':
             		if(A != B)
-                			printf("V\n");
+                		printf("V\n");
             		else
-                			printf("F\n");
+                		printf("F\n");
             		break;
         		case '>':
             		if(A == 1 && B == 0)
-                			printf("F\n");
+                		printf("F\n");
             		else
-                			printf("V\n");
+                		printf("V\n");
             		break;
         		case '=':
             		if(A == B)
-                			printf("V\n");
+                		printf("V\n");
             		else
-                			printf("F\n");
+                		printf("F\n");
             		break;
     		}
    	 
