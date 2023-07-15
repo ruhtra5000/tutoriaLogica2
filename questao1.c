@@ -1,3 +1,14 @@
+/*
+Sabendo que A é verdadeiro, B é falso e C é verdadeiro, podemos assumir que:
+a) (B ∨ C) é verdadeiro, portanto A ∧ (B ∨ C) é verdadeiro, já que A também é verdadeiro.
+b) (A ∧ B) tem valor verdade falso, pois B é falso, mas C é verdadeiro, então: (A ∧ B) ∨ C é verdadeiro.
+c) (A ∧ B)’ tem valor verdade verdadeiro, pois seu valor verdade padrão é falso, então sua negação é verdadeira, e C também é verdadeiro, 
+   então: (A ∧ B)’ ∨ C é verdadeiro.
+d) (B’ ∧ C) assume valor verdadeiro, e A torna-se falso com a sua negação, portanto: A’ ∨ (B’ ∧ C) é verdadeiro.
+
+Ao resolver esse problema de forma computacional, é interessante a criação de algumas funções para cada um dos conectivos lógicos utilizados: 
+conjunção, disjunção e negação; e usá-los para criar os casos particulares em cada letra da questão.
+*/
 #include <stdio.h>
 
 int negacao(int A){
